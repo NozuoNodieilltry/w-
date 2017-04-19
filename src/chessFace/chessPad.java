@@ -51,8 +51,18 @@ public class chessPad {
 	boolean checkWin(int a,int b,int checkColor){
 		for(step=1;step<=4;step++){
 			for(chessCompare=0;chessCompare<=chessBlackCount;chessCompare++){
-				if(((a+step)*20==))
+				if(((a+step)*20==chessBlack_x[chessCompare])
+					&& (b*20)==chessBlack_y[chessCompare]){
+					chessLink=chessLink+1;
+					if(chessLink==5){
+						return true;
+					}
+				}
 			}
+			if(chessLink==(chessLinkText+1))
+				chessLinkTest++;
+			else
+				break;
 		}
 		return false;
 		//判断a,b点是否可分出胜负
